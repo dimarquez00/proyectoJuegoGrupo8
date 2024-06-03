@@ -1,0 +1,100 @@
+/* Variables */
+:root {
+    --color-principal: #ED8618; 
+    --color-secundario: #ED6118; 
+}
+
+/* Header  */
+.headerText{
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    margin-left: 6px;
+}
+.menu{
+    font-weight: 500;
+    margin-left: auto;
+}
+.linksMenu:hover{
+    text-decoration: underline;
+}
+
+/* Main */
+.row{
+    justify-content: center;
+}
+.card-title{
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+/* Main Inicio */
+.contenedorPrincipal{
+    height: 110vh;
+    background-image: url("./img/imagenInicio.jpg");
+    background-position-x: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorSecundario{
+    color: white;
+    width: 60%;
+    height: 80%;
+    background: rgba(227, 118, 16, 0.9); 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedorTexto{
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+.contenedorTexto p a{
+    text-decoration: none;
+    color: #099ddc;
+}
+.contenedorTexto p a:hover{
+    text-decoration: underline;
+}
+
+
+#botonJuegos{
+    background-color: var(--color-principal);
+    border-color: var(--color-secundario);
+    width: 125px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#botonJuegos:hover{
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+}
+
+/* Footer */
+
+.footer{
+    background-color: #ED8618
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px){
+    .contenedorSecundario{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 720px){
+    .contenedorSecundario{
+        flex-direction: column;
+        height: 60%;
+    }
+}
+@media screen and (max-width: 425px){
+    .contenedorSecundario{
+        width: 90%;
+        padding: 10px;
+    }
+}
