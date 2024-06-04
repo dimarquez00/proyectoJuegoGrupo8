@@ -111,7 +111,6 @@
 }
 
 #memory-result {
-    margin-top: 20px;
     font-size: 1.2em;
     color: green;
     width: 350px;
@@ -121,13 +120,38 @@
     border: #ED6118 2px solid;
     padding: 5px;
     text-align: center;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#señalDescripcion {
+    font-size: 1.2em;
+    color: green;
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    border: #ED6118 2px solid;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Cartas Juego */
 #game-memory img{
     width: 75px;
     height: 75px;
+}
+
+
+/* Mensajes emergentes */
+#btnContacto{
+    background-color: var(--color-principal);
+    border-color: var(--color-secundario);
 }
 
 /* Footer */
@@ -171,6 +195,9 @@
     #memory-result{
         width: 230px;
         height: 80px;
-
+    }	
+    #señalDescripcion{
+        width: 230px;
+        /* height: 80px; */
     }	
 }

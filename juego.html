@@ -52,21 +52,40 @@
         </div>
         <!-- Juego 1 -->
         <div id="game-memory">
-          <div class="card" data-signal="señal1.png">❓</div>
-          <div class="card" data-signal="señal2.png">❓</div>
-          <div class="card" data-signal="señal4.png">❓</div>
-          <div class="card" data-signal="señal3.png">❓</div>
-          <div class="card" data-signal="señal3.png">❓</div>
-          <div class="card" data-signal="señal4.png">❓</div>
-          <div class="card" data-signal="señal1.png">❓</div>
-          <div class="card" data-signal="señal2.png">❓</div>
-          <!-- Más cartas pueden ser agregadas aquí -->
+          <div class="card" data-signal="señal1">❓</div>
+          <div class="card" data-signal="señal2">❓</div>
+          <div class="card" data-signal="señal4">❓</div>
+          <div class="card" data-signal="señal3">❓</div>
+          <div class="card" data-signal="señal3">❓</div>
+          <div class="card" data-signal="señal4">❓</div>
+          <div class="card" data-signal="señal1">❓</div>
+          <div class="card" data-signal="señal2">❓</div>
         </div>
-        <!-- Juego 2 -->
-        
-        <div id="memory-result"></div>
+        <h5 class="mb-1 mt-3">Estado:</h4>
+        <div id="memory-result">
+        </div>
+        <h5 class="mb-1 mt-3">Información de la señal:</h5>
+        <div id="señalDescripcion" class="text-dark"> 
+          <p>Si responden correctamente. En esta ventana va a salir la información sobre la señal de transito.</p>
+        </div>
       </div>
     </section>
+    <!-- Mensaje felicitaciones -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Felicitaciones </h5>
+          </div>
+          <div class="modal-body">
+            <p>¡Has completado el juego! </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary mt-1" id="btnContacto" data-dismiss="modal" onclick="window.location.reload()">Jugar de nuevo</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="text-center text-lg-start text-white footer">
     <div class="container p-4 pb-0">
@@ -74,7 +93,7 @@
         <div class="row">
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 text-center">
             <h6 class="text-uppercase mb-4 font-weight-bold">
-              Nombre organizacion
+              Nombre organización
             </h6>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero vitae ut doloremque quasi 
