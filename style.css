@@ -84,6 +84,55 @@
     border-color: var(--color-secundario);
 }
 
+/* Main Juego */
+
+#game-memory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+#memory-result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: green;
+    width: 350px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border: #ED6118 2px solid;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Cartas Juego */
+#game-memory img{
+    width: 75px;
+    height: 75px;
+}
+
 /* Footer */
 
 .footer{
