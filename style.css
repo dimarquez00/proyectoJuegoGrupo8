@@ -40,7 +40,6 @@
 .contenedorSecundario{
     color: white;
     width: 60%;
-    /* max-height: 750px; */
     height: 90%;
     background: rgba(227, 118, 16, 0.9); 
     padding: 20px;
@@ -62,7 +61,6 @@
 }
 #linkJuego{
     color: white;
-    /* text-decoration: underline; */
 }
 #linkJuego:hover{
     color: rgb(225, 225, 225);
@@ -72,7 +70,6 @@
 #botonJuegos{
     background-color: var(--color-principal);
     border-color: var(--color-secundario);
-    /* width: 125px; */
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
@@ -140,15 +137,22 @@
 }
 
 /* Media Queries */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1425px){
+    .contenedorPrincipal{
+        height: 150vh;
+
+    }
     .contenedorSecundario{
         width: 80%;
     }
+    .nav-item{
+        margin-left: 20px;
+    }
+
 }
 @media screen and (max-width: 768px){
     .contenedorPrincipal{
         height: 110%;
-        /* margin: 40px 0; */
         padding: 20px 0;
     }
     .contenedorSecundario{
@@ -164,4 +168,9 @@
     .contenedorTexto ul{
         padding-left: 5px;
     }
+    #memory-result{
+        width: 230px;
+        height: 80px;
+
+    }	
 }
