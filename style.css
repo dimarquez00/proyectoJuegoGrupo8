@@ -1,7 +1,8 @@
 /* Variables */
 :root {
-    --color-principal: #ED8618; 
-    --color-secundario: #ED6118; 
+    --color-principal: #15120E; 
+    --color-secundario: #ffaf02; 
+    --color-terciario: #FF8B02; 
 }
 
 /* Header  */
@@ -9,6 +10,24 @@
     font-family: "Kanit", sans-serif;
     font-style: normal;
     margin-left: 6px;
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    padding: 0;
+}
+#barraMenu{
+    background-color: var(--color-principal);
+}
+#barraMenu a{
+    color: white;
+}
+#barraMenu ul{
+    color: white;
+}
+
+#menuToggle{
+    background-color: var(--color-secundario);
 }
 .menu{
     font-weight: 500;
@@ -29,7 +48,7 @@
 /* Main Inicio */
 .contenedorPrincipal{
     height: 110vh;
-    background-image: url("./img/imagenInicio.jpg");
+    background-image: url("./img/fondo.png");
     background-position-x: center;
     background-size: cover;
     display: flex;
@@ -41,7 +60,7 @@
     color: white;
     width: 60%;
     height: 90%;
-    background: rgba(227, 118, 16, 0.9); 
+    background: rgba(0, 0, 0, 0.53); 
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -68,17 +87,20 @@
 }
 
 #botonJuegos{
-    background-color: var(--color-principal);
+    background-color: var(--color-secundario);
     border-color: var(--color-secundario);
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 1.5rem;
     padding: 10px 20px;
+    color: black;
+
 }
 #botonJuegos:hover{
-    background-color: var(--color-secundario);
-    border-color: var(--color-secundario);
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
 }
 
 /* Main Juego */
@@ -112,12 +134,13 @@
 
 #memory-result {
     font-size: 1.2em;
+    font-weight: 500;
     color: green;
     width: 350px;
     height: 50px;
     background-color: white;
     border-radius: 10px;
-    border: #ED6118 2px solid;
+    border: var(--color-secundario) 2px solid;
     padding: 5px;
     text-align: center;
     display: flex;
@@ -127,12 +150,13 @@
 
 #señalDescripcion {
     font-size: 1.2em;
+    font-weight: 500;
     color: green;
     width: 350px;
     height: 200px;
     background-color: white;
     border-radius: 10px;
-    border: #ED6118 2px solid;
+    border: var(--color-secundario) 2px solid;
     padding: 5px;
     text-align: center;
     display: flex;
@@ -150,14 +174,20 @@
 
 /* Mensajes emergentes */
 #btnContacto{
-    background-color: var(--color-principal);
+    background-color: var(--color-secundario);
     border-color: var(--color-secundario);
+    color: black;
+}
+#btnContacto:hover{
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    text-decoration: underline;
 }
 
 /* Footer */
 
 .footer{
-    background-color: #ED8618
+    background-color: var(--color-principal);
 }
 
 /* Media Queries */
